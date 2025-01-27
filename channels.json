@@ -1,0 +1,57 @@
+[
+    {
+        "name": "BBC One",
+        "url": "https:\/\/dobby.aweline.co.uk\/rowharderupthestream\/8005\/playlist.m3u8",
+        "icon": "BBC1.png"
+    },
+    {
+        "name": "BBC Two",
+        "url": "https:\/\/dobby.aweline.co.uk\/rowharderupthestream\/8006\/playlist.m3u8",
+        "icon": "bbc2.png"
+    },
+    {
+        "name": "ITV",
+        "url": "https:\/\/dobby.aweline.co.uk\/rowharderupthestream\/8007\/playlist.m3u8",
+        "icon": "itv.png"
+    },
+    {
+        "name": "Channel 4",
+        "url": "https:\/\/dobby.aweline.co.uk\/rowharderupthestream\/8008\/playlist.m3u8",
+        "icon": "ch4.png"
+    },
+    {
+        "name": "Channel 5",
+        "url": "https:\/\/dobby.aweline.co.uk\/rowharderupthestream\/8014\/playlist.m3u8",
+        "icon": "ch5.png"
+    },
+    {
+        "name": "Dave",
+        "url": "https:\/\/dobby.aweline.co.uk\/rowharderupthestream\/8003\/playlist.m3u8",
+        "icon": "Dave.png"
+    },
+    {
+        "name": "Film4",
+        "url": "https:\/\/dobby.aweline.co.uk\/rowharderupthestream\/8002\/playlist.m3u8",
+        "icon": "film4.png"
+    },
+    {
+        "name": "test",
+        "url": "http:\/\/.",
+        "icon": "BBC1.png"
+    },
+    {
+        "name": "test",
+        "url": "http:\/\/.",
+        "icon": "BBC1.png"
+    },
+    {
+        "name": "test",
+        "url": "http:\/\/.",
+        "icon": "BBC1.png"
+    },
+    {
+        "name": "test",
+        "url": "http:\/\/.",
+        "icon": "BBC1.png"
+    }
+]
