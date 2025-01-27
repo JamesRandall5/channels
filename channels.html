@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Viewer</title>
+    <link rel="stylesheet" href="stylesC.css">
+    <script src="channels.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo on the left -->
+        <img src="NHSlogo.png" alt="Logo" class="header-logo">
+
+        <!-- Centered Title -->
+        <h1>Available Channels</h1>
+
+        <!-- Date and Time on the right -->
+        <div class="header-datetime">
+            <span class="time" id="time"></span>
+            <span class="date" id="date"></span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="channel-container">
+            <!-- Channels will be dynamically inserted here -->
+        </div>
+        <div id="pagination-dots"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Channel Viewer</p>
+    </footer>
+</body>
+</html>
