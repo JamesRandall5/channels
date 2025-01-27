@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Header Styling */
+header, footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #0078d4, #005bb5);
+    color: white;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    top: 0;
+    height: 100px;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-logo {
+    width: 150px;
+    height: auto;
+}
+
+header h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Header Date and Time Container */
+.header-datetime {
+    display: flex;
+    flex-direction: column; /* Date below time */
+    align-items: flex-end;
+    justify-content: center; /* Vertically center time and date */
+    font-size: 1em;
+    line-height: 1.2; /* Adjust spacing between lines */
+    white-space: nowrap; /* Prevent wrapping */
+    text-align: right;
+    gap: 5px; /* Space between time and date */
+    padding-right: 10px;
+    overflow: hidden; /* Prevent any accidental overflow */
+    max-width: calc(100% - 150px); /* Reserve space for the logo and title */
+}
+
+/* Time Styling */
+.header-datetime .time {
+    font-size: 1.5em; /* Larger font for time */
+    font-weight: bold;
+}
+
+/* Date Styling */
+.header-datetime .date {
+    font-size: 1em; /* Smaller font for date */
+}
+
+/* Footer */
+footer {
+    bottom: 0;
+    justify-content: center;
+    height: 40px;
+    text-align: center;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 140px); /* Adjust for header and footer */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Channel Container */
+.channel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: calc(100% - 50px); /* Leave space for dots */
+}
+
+.channel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex: 0 0 100%; /* Each page takes full width */
+    scroll-snap-align: start;
+    padding: 20px;
+}
+
+.channel-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004E98;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 90px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Pagination Dots */
+#pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #0078d4;
+}
